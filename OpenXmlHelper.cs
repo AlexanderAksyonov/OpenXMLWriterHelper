@@ -104,7 +104,7 @@ namespace ITV.Reporting.WorkTime.Code
 
         internal void AddCell(bool cellValue, int styleID = 0, int colspan = 1)
         {
-            AddCell(cellValue.ToString() == "True" ? "1" : "0", CellValues.Boolean, styleID, colspan);
+            AddCell(cellValue ? "1" : "0", CellValues.Boolean, styleID, colspan);
         }
         internal void AddCell(DateTime cellValue, int styleID = 0, int colspan = 1)
         {
